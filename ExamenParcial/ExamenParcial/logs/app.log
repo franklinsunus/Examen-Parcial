@@ -1,0 +1,117 @@
+2024-11-17 14:35:12 - Starting ExamenParcialApplication using Java 17.0.12 with PID 14416 (F:\CosasF\VIII\TALLER DE DESARROLLO\ExamenParcial\ExamenParcial\target\classes started by frank in F:\CosasF\VIII\TALLER DE DESARROLLO\ExamenParcial\ExamenParcial)
+2024-11-17 14:35:12 - No active profile set, falling back to 1 default profile: "default"
+2024-11-17 14:35:13 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-17 14:35:13 - Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2024-11-17 14:35:13 - Tomcat initialized with port 8082 (http)
+2024-11-17 14:35:13 - Initializing ProtocolHandler ["http-nio-8082"]
+2024-11-17 14:35:13 - Starting service [Tomcat]
+2024-11-17 14:35:13 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-17 14:35:13 - Initializing Spring embedded WebApplicationContext
+2024-11-17 14:35:13 - Root WebApplicationContext: initialization completed in 1645 ms
+2024-11-17 14:35:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-17 14:35:14 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-17 14:35:14 - HHH000026: Second-level cache disabled
+2024-11-17 14:35:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-17 14:35:14 - HikariPool-1 - Starting...
+2024-11-17 14:35:14 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2aac8ad7
+2024-11-17 14:35:14 - HikariPool-1 - Start completed.
+2024-11-17 14:35:15 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-17 14:35:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-17 14:35:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-17 14:35:16 - Starting ProtocolHandler ["http-nio-8082"]
+2024-11-17 14:35:16 - Tomcat started on port 8082 (http) with context path '/'
+2024-11-17 14:35:16 - Started ExamenParcialApplication in 4.937 seconds (process running for 5.404)
+2024-11-17 14:40:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-17 14:40:24 - Initializing Servlet 'dispatcherServlet'
+2024-11-17 14:40:24 - Completed initialization in 1 ms
+2024-11-17 14:40:24 - Se verificÃ³ el estado de conexiÃ³n
+2024-11-17 14:41:21 - Error al obtener el alumno con ID: 66 - Alumno no encontrado con ID: 66
+2024-11-17 14:41:21 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Error al obtener el alumno con ID: 66] with root cause
+java.lang.RuntimeException: Alumno no encontrado con ID: 66
+	at ExamenParcial.ExamenParcial.controllers.Controller.lambda$getAlumnoById$0(Controller.java:50)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at ExamenParcial.ExamenParcial.controllers.Controller.getAlumnoById(Controller.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-11-17 14:42:19 - Alumno creado correctamente con nombre: alok
+2024-11-17 14:43:10 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-11-17 14:43:30 - Alumno con ID: 6 editado correctamente
+2024-11-17 14:43:50 - Alumno con ID: 6 eliminado correctamente
+2024-11-18 17:26:04 - Starting ExamenParcialApplication using Java 17.0.12 with PID 8024 (E:\CosasF\VIII\TALLER DE DESARROLLO\ExamenParcial\ExamenParcial\target\classes started by Ganso Pum in E:\CosasF\VIII\TALLER DE DESARROLLO\ExamenParcial\ExamenParcial)
+2024-11-18 17:26:04 - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 17:26:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-18 17:26:08 - Finished Spring Data repository scanning in 192 ms. Found 1 JPA repository interface.
+2024-11-18 17:26:12 - Tomcat initialized with port 8082 (http)
+2024-11-18 17:26:12 - Initializing ProtocolHandler ["http-nio-8082"]
+2024-11-18 17:26:12 - Starting service [Tomcat]
+2024-11-18 17:26:12 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-18 17:26:12 - Initializing Spring embedded WebApplicationContext
+2024-11-18 17:26:12 - Root WebApplicationContext: initialization completed in 7706 ms
+2024-11-18 17:26:13 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-18 17:26:14 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-18 17:26:14 - HHH000026: Second-level cache disabled
+2024-11-18 17:26:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-18 17:26:15 - HikariPool-1 - Starting...
+2024-11-18 17:26:17 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@347123dc
+2024-11-18 17:26:17 - HikariPool-1 - Start completed.
+2024-11-18 17:26:21 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-18 17:26:21 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 17:26:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-18 17:26:24 - Starting ProtocolHandler ["http-nio-8082"]
+2024-11-18 17:26:24 - Tomcat started on port 8082 (http) with context path '/'
+2024-11-18 17:26:24 - Started ExamenParcialApplication in 21.986 seconds (process running for 24.267)
+2024-11-18 17:28:01 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 17:28:01 - Initializing Servlet 'dispatcherServlet'
+2024-11-18 17:28:01 - Completed initialization in 22 ms
+2024-11-18 17:28:01 - Se verificó el estado de conexión
+2024-11-18 17:33:56 - Alumno creado correctamente con nombre: pocoyo
+2024-11-18 17:34:50 - Alumno con ID: 7 editado correctamente
+2024-11-18 17:35:18 - Alumno con ID: 7 eliminado correctamente
